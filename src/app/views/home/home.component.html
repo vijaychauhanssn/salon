@@ -1,3 +1,73 @@
-<p>
-  home works!
-</p>
+<app-topheader></app-topheader>
+<app-header></app-header>
+<div id="main">
+    <!-- **Breadcrumb** -->
+    <section class="breadcrumb-section type2 " style=" background:url(https://spalab.wpengine.com/wp-content/themes/spalab/images/breadcrumb-default-bg.jpg) center center repeat;">
+        <div class="container">
+            <div class="main-title-section">
+                <h1>Header Types</h1>
+            </div>
+            <!-- **Searchform** -->
+            <form method="get" class="searchform" action="#">
+                <input id="s-keyword" name="s" type="text" value="Enter Keyword" class="text_input" onblur="if(this.value==''){this.value='Enter Keyword';}" onfocus="if(this.value =='Enter Keyword') {this.value=''; }">
+                <input type="submit" value="" style="font-family:FontAwesome">
+            </form>
+            <!-- **Searchform - End** -->
+        </div>
+        <div class="breadcrumb">
+            <div class="container">
+                <span class="simpletext">You are here:</span>
+                <a href="#">Home</a><span class="fa fa-angle-double-right">  </span>
+                <h6>Header</h6>
+            </div>
+        </div>
+    </section>
+    <!-- ** breadcrumb - End -->
+    <!-- ** Container ** -->
+    <!-- **Container - End** -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="FDFD">
+                        <li class="current_page_itemf" *ngFor="let item of items">
+                            <a class="smoothScroll" href="#aesthetics">{{item.name}}<span class="fa "></span>
+            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h2 id="aesthetics">
+                        <span>Aesthetics</span></h2>
+                    <article class="menu-list">
+                        <div class="menu-thumb">
+                            <span class="rounded">
+                        <img width="600" height="600" src="https://spalab.wpengine.com/wp-content/uploads/2014/07/catalog3.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="https://spalab.wpengine.com/wp-content/uploads/2014/07/catalog3.jpg 600w, https://spalab.wpengine.com/wp-content/uploads/2014/07/catalog3-150x150.jpg 150w, https://spalab.wpengine.com/wp-content/uploads/2014/07/catalog3-300x300.jpg 300w, https://spalab.wpengine.com/wp-content/uploads/2014/07/catalog3-90x90.jpg 90w" sizes="(max-width: 600px) 100vw, 600px">			</span>
+                        </div>
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h3>Aroma stone massage</h3>
+                                <span>Time Dur : 20 - 30 min</span> <a class="price dt-sc-button small" href="">$ 65.00</a> </div>
+                            <p>Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </article>
+                    <article class="menu-list">
+                        <div class="menu-thumb">
+                            <span class="rounded">
+                    <img width="600" height="600" src="https://spalab.wpengine.com/wp-content/uploads/2014/05/catalog27.jpg" class="attachment-full size-full wp-post-image" alt="" srcset="https://spalab.wpengine.com/wp-content/uploads/2014/05/catalog27.jpg 600w, https://spalab.wpengine.com/wp-content/uploads/2014/05/catalog27-150x150.jpg 150w, https://spalab.wpengine.com/wp-content/uploads/2014/05/catalog27-300x300.jpg 300w, https://spalab.wpengine.com/wp-content/uploads/2014/05/catalog27-90x90.jpg 90w" sizes="(max-width: 600px) 100vw, 600px">			</span>
+                        </div>
+                        <div class="menu-details">
+                            <div class="menu-title">
+                                <h3>Hair Treatment</h3>
+                                <span>Time Dur : 20 - 30 min</span> <a class="price dt-sc-button small" href="">$ 76.43</a> </div>
+                            <p>Saleem naijar kaasram eerie can be disbursed in the wofl like of a fox that is her thing smaoasa lase lemedds laasd.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </article>
+                    <div class="dt-sc-hr floral-grey"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
